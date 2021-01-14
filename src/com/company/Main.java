@@ -18,8 +18,7 @@ public class Main {
             File file2 = new File("file2.txt");
             FileInputStream in2 =  new FileInputStream("file2.txt");
             if (file1.length()>=file2.length()){
-                FileInputStream in = new FileInputStream(file1);
-                while((c = in.read())!= -1){
+                while((c = in1.read())!= -1){
                     ch1 = (char) in1.read();
                     ch2 = (char) in2.read();
                     if (ch1!=ch2){
@@ -28,8 +27,7 @@ public class Main {
                 }
             }
             if (file1.length()<file2.length()){
-                FileInputStream in = new FileInputStream(file2);
-                while((c = in.read())!= -1){
+                while((c = in2.read())!= -1){
                     ch1 = (char) in1.read();
                     ch2 = (char) in2.read();
                     if (ch1!=ch2){
